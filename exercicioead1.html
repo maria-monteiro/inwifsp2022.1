@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            table, th, td{
+                    border: 3px solid black;
+                    border-collapse: collapse;
+            }
+        </style>
+        <title>Prova</title>
+    </head>
+    <body>
+        <h1>Exemplo de imagem</h1><!--A Imagem precisar -->
+        <p>Este é um exemplo de como inserir uma imagem</p>
+        <img src="mar.jpg"alt="100" height="100" width="100"> <!--caminho absoluto com alteração de tamanho-->
+        <h2>Inserindo a mesma imagem em um caminho relativo</h2>
+        <img src='mar.jpg'alt="image" height="100" width="100"> <!--caminho relativo com alteração de tamanho-->
+        <h3>Outro exemplo de caminho relativo.</h3>
+        <img src="mar.jpg">
+        <h4>Para voltar um ou algumas vezes para selecionar no caminho relativo:</h4>
+        <img src="mar.jpg"><br><br> <!---->
+        <h5>Como fazer tabelas ? </h5>
+        <table style="border: 1px solid black ;">
+            <tr> <!--quantidade de linhas é tr -->
+                <th>Nome</th><!-- parte da head da tabela-->
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>João</td><!--dados da tabela = td -->
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>12</td>
+            </tr>
+        </table>
+        <h6>Segundo exemplo de tabela</h6><!--mescla de colunas-->
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Telefone</th>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+        <h7>Tabela com mescla de linhas</h7>
+        <table>
+            <thead><!--cabeçalho da tabela-->
+                <tr>
+                    <th>Data</th>
+                    <th>aula</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2"> 19/04</td>
+                    <td>INW</td>
+                </tr>
+                <tr>
+                    <td>ARQ</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">20/04</td>
+                    <td>AP1</td>
+                </tr>
+                <tr>
+                    <td>AP1</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Listas ordenadas-->
+        <ol>
+            <li>Ovo</li>
+            <li>Pascoa</li>
+            <li>Farinha</li>
+        </ol>
+        <!--Listas não ordenadas-->
+        <ul>
+            <li>São Paulo</li>
+            <li>Rio de Janeiro</li>
+            <li>Minas Gerais</li>
+            <li>Espirito Santo</li>
+        </ul>
+        <!--Referencia á links com divisões/seções-->
+        <section></section>
+        <div id="site ifsp">
+            <a href="https://scl.ifsp.edu.br/">Site Ifsp</a>
+        </div>
+        <!--Exemplo de formulario-->
+        <div id="Cadastro">
+        <h7>Cadastro de usuário</h7>
+        </div>
+        <form>
+            <label for="iptNome">Nome</label>
+            <input type="text" id="iptNome" name="nome"><br>
+            <label for="iptSobrenome">Sobrenome</label>
+            <input type="text" id="iptSobrenome" name="sobrenome"><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+
+    </body>
+</html>
